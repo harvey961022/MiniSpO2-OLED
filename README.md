@@ -26,6 +26,8 @@
 
 OLED 跟 MAX30102 / MAX30105 都是 I2C，所以可以接在同一組 SDA / SCL 上。
 
+![ESP32 血氧心率 OLED 接線圖](LINE_20260528_124529.jpg)
+
 ESP32 常用接法：
 
 ```text
@@ -41,6 +43,8 @@ MAX30102 SCL -> GPIO 22
 ```
 
 如果你的模組標示不是 SDA / SCL，而是其他名字，基本上也是照 I2C 腳位去接。
+
+接線圖原始檔可以下載 `Oxygen_Saturation.fzz`，使用 Fritzing 開啟後可以自行修改。
 
 ## 需要安裝的 Library
 
