@@ -2,7 +2,7 @@
 
 這是一個用 ESP32 做的小型血氧心率顯示器。
 
-目前螢幕是 0.96 吋 128x64 I2C OLED，所以畫面不能塞太多東西，這版主要就是顯示重點資訊：
+目前螢幕是 0.96 吋 128x64 I2C OLED
 
 * SpO2 血氧
 * BPM 心率
@@ -37,8 +37,6 @@ MAX30102 GND -> GND
 MAX30102 SDA -> GPIO 21
 MAX30102 SCL -> GPIO 22
 ```
-
-如果你的模組標示不是 SDA / SCL，而是其他名字，基本上也是照 I2C 腳位去接。
 
 ## 需要安裝的 Library
 
@@ -201,20 +199,6 @@ warning: "I2C_BUFFER_LENGTH" redefined
 ```
 
 代表程式已經編譯成功。
-
-## 目前這版拿掉的東西
-
-這版已經拿掉 HTML / 網頁相關功能，所以不需要安裝：
-
-```text
-ESPAsyncWebServer
-WebServer
-WiFi
-ArduinoJson
-U8g2
-```
-
-也不需要開網頁看數據，全部直接顯示在 OLED 上。
 
 ## 使用方式
 
